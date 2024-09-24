@@ -24,7 +24,8 @@ class tareaController extends Controller
         }
 
         $data = [
-            'message' => $tareas
+            'message' => $tareas,
+            'status'  => 200
         ];
 
         return response()->json($tareas,200);
@@ -64,7 +65,8 @@ class tareaController extends Controller
         }
 
         $data = [
-            'message' => 'se ha creado la tarea correctamente'
+            'message' => 'se ha creado la tarea correctamente',
+            'status'  => 200
         ];
         return response()->json($data,200);
     }
@@ -94,7 +96,8 @@ class tareaController extends Controller
         }
 
         $data = [
-            'message' => $tarea
+            'dato' => $tarea,
+            'status'  => 200
         ];
         return response()->json($data,200);
     }
@@ -143,6 +146,7 @@ class tareaController extends Controller
 
         $data = [
             'message' => 'la tarea ha sido actualizada.',
+            'status'  => 200
         ];
         return response()->json($data,200);
     }
@@ -175,6 +179,7 @@ class tareaController extends Controller
 
         $data = [
             'message' => 'la tarea ha sido eliminada.',
+            'status'  => 200
         ];
         return response()->json($data,200);
     }
