@@ -2,24 +2,15 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\tareaController;
 
-Route::get('/tareas', function () {
-    return "Aca estoy consultando mis tareas";
-});
+Route::get('/tareas', [tareaController::class, 'consultarTareas']);
 
-Route::get('/tarea/{id}', function () {
-    return "Aca estoy preguntando mi tarea";
-});
+Route::get('/tarea/{id}', [tareaController::class, 'consultarTarea']);
 
-Route::post('/tarea', function () {
-    return "Aca estoy guardando";
-});
+Route::post('/tarea', [tareaController::class, 'crearTarea']);
 
-Route::put('/tarea/{id}', function () {
-    return "Aca estoy actualizando";
-});
+Route::put('/tarea/{id}', [tareaController::class, 'actualizarTarea']);
 
-Route::delete('/tarea/{id}', function () {
-    return "Aca estoy borrando";
-});
+Route::delete('/tarea/{id}', [tareaController::class, 'eliminarTarea']);
 
