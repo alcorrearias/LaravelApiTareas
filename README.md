@@ -81,7 +81,17 @@ Instalación:
 
 # tareas-vue
 
-este es el front de Vuejs creado para visualizar las tareas con en una tabla y su respectivas acciones de eliminar , editar , crear.
+## Api en Vuejs
+
+La api creada en (https://github.com/alcorrearias/LaravelApiTareas/tree/main/tareas-vue)
+
+- CRUD
+
+Instalación:
+
+1) Clonar o descargar el proyecto en el directorio de tu servidor web
+
+2) Acceder mediante terminal a la carpeta del proyecto tareas-vue
 
 ## Project setup
 ```
