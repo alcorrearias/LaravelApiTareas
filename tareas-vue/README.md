@@ -1,5 +1,7 @@
 # tareas-vue
 
+este es el front de Vuejs creado para visualizar las tareas con en una tabla y su respectivas acciones de eliminar , editar , crear.
+
 ## Project setup
 ```
 npm install
